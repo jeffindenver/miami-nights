@@ -4,7 +4,7 @@
 
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleA1.css">
   <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
@@ -20,12 +20,12 @@
   <div id="overlay">
 
     <div class="instructions">
-      <h2>Instructions</h2>
-      <p>There are 10 multiple choice questions. Please choose one answer for each. There is no time limit on this test.
+      <h2 style="font-size: larger;">Instructions</h2>
+      <p class="text-light">There are 10 multiple choice questions. Please choose one answer for each. There is no time limit on this test.
         Click the "Begin" button to start.</p>
     </div>
 
-    <button id="begin" class="btn-info button">BEGIN</button>
+    <button id="begin" class="button">BEGIN</button>
 
     <div id="myCarousel" class="carousel slide text-light" data-ride="false" data-interval="false">
 
@@ -34,72 +34,74 @@
         <div id="start" class="carousel-item text-light list-group-flush">
 
           1. The kinds of values that can be represented and manipulated in a programming language are known as:
-
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="parens" id="optA" value="a" data-bind="checked: optionsValue">
-              a) Variables
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="parens" id="optB" value="b" data-bind="checked: optionsValue">
-              b) Types
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light"><input type="radio" name="parens" id="optC" value="c"
-                data-bind="checked: optionsValue">
-              c) Methods
-            </label>
-          </li>
-
+          <ul>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="parens" id="optA" value="a" data-bind="checked: optionsValue">
+                a) Variables
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="parens" id="optB" value="b" data-bind="checked: optionsValue">
+                b) Types
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light"><input type="radio" name="parens" id="optC" value="c"
+                  data-bind="checked: optionsValue">
+                c) Methods
+              </label>
+            </li>
+          </ul>
         </div>
 
         <div class="carousel-item text-light list-group-flush">
           2. What are used to contain the identifiers that are passed to a function?
-
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="parens" id="optA" value="a" data-bind="checked: optionsValue"> a) Curly
-              braces
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="parens" id="optB" value="b" data-bind="checked: optionsValue"> b) Brackets
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="parens" id="optC" value="c" data-bind="checked: optionsValue"> c)
-              Parentheses
-            </label>
-          </li>
+          <ul>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="parens" id="optA" value="a" data-bind="checked: optionsValue"> a) Curly
+                braces
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="parens" id="optB" value="b" data-bind="checked: optionsValue"> b) Brackets
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="parens" id="optC" value="c" data-bind="checked: optionsValue"> c)
+                Parentheses
+              </label>
+            </li>
+          </ul>
         </div>
 
         <div class="carousel-item text-light list-group-flush">
           3. The three types of programming errors are:
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="errors" id="optA" value="a" data-bind="checked: optionsValue2"> a) Syntax,
-              Runtime, and Logical
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="errors" id="optB" value="b" data-bind="checked: optionsValue2"> b) System,
-              Runtime, and Logical
-            </label>
-          </li>
-          <li>
-            <label class="btn text-light">
-              <input type="radio" name="errors" id="optC" value="c" data-bind="checked: optionsValue2"> c) System,
-              Grammatical, and User
-            </label>
-          </li>
+          <ul>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="errors" id="optA" value="a" data-bind="checked: optionsValue2"> a) Syntax,
+                Runtime, and Logical
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="errors" id="optB" value="b" data-bind="checked: optionsValue2"> b) System,
+                Runtime, and Logical
+              </label>
+            </li>
+            <li>
+              <label class="btn text-light">
+                <input type="radio" name="errors" id="optC" value="c" data-bind="checked: optionsValue2"> c) System,
+                Grammatical, and User
+              </label>
+            </li>
+          </ul>
         </div>
-
       </div>
 
       <a class="carousel-control-prev padded" href="#myCarousel" role="button" data-slide="prev">
@@ -116,9 +118,6 @@
   <canvas id="theCanvas"></canvas>
 
   <script src="js/miami-nights-script.js"></script>
-
-
-  </script>
 
 </body>
 
