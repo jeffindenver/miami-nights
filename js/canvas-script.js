@@ -33,13 +33,3 @@ function drawImage2() {
 window.onresize = () => {
   context.scale(1, 1);
 }
-
-$(function () {
-  $("#begin").click(() => {
-    $(".instructions").hide(400);
-    $(".button").fadeOut(200);
-    $("#myCarousel").css("display", "block");
-    $("#start").addClass("active");
-    //add submit button
-  });
-});
