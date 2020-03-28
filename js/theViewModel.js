@@ -82,6 +82,6 @@ function ViewModel(model) {
       console.log("Item ID: " + item.id + " Value: " + item.userAnswer);
       num++;
     })
-  }
+  };
 
 };
