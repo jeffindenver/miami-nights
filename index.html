@@ -20,12 +20,14 @@
 
     <div class="instructions">
       <h2 style="font-size: larger;">Instructions</h2>
-      <p class="text-light">There are 10 multiple choice questions. Please choose one answer for each. There is no time limit on this test.
+      <p class="text-light">There are 10 multiple choice questions. Please choose one answer for each. There is no time
+        limit on this test.
         Click the "Begin" button to start.</p>
     </div>
 
     <button id="begin" class="button">BEGIN</button>
     <button id="submit" class="button">SUBMIT</button>
+    <button id="retry" class="button">RETRY</button>
 
     <div id="myCarousel" class="carousel slide text-light" data-ride="false" data-interval="false">
 
@@ -40,6 +42,25 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <div class="summary text-light">
+      <h2>Summary</h2>
+      <p>You selected the following answers.
+        <ul>
+          <li><span data-bind="text: userAnswer1"></span></li>
+          <li><span data-bind="text: userAnswer2"></span></li>
+          <li><span data-bind="text: userAnswer3"></span></li>
+          <li><span data-bind="text: userAnswer4"></span></li>
+          <li><span data-bind="text: userAnswer5"></span></li>
+          <li><span data-bind="text: userAnswer6"></span></li>
+          <li><span data-bind="text: userAnswer7"></span></li>
+          <li><span data-bind="text: userAnswer8"></span></li>
+          <li><span data-bind="text: userAnswer9"></span></li>
+          <li><span data-bind="text: userAnswer10"></span></li>
+        </ul>
+      </p>
+    </div>
+
   </div>
 
   <canvas id="theCanvas"></canvas>
