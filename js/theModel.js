@@ -87,9 +87,8 @@ function QuizModel() {
           "c": "c) Method functions"
         }),
       new Question(
-        "9", "There are four ways to embed JavaScript code within HTML documents: \
-        Inline, external file, in an HTML event handler such as onClick, and in a \
-        URL that uses the special javascript: protocol.  Which are the most common?",
+        "9", "There are four ways to embed JavaScript code within HTML documents. \
+        Which two are the most common?",
         "a", {
           "a": "a) Inline and external file",
           "b": "b) In an HTML event handler and a URL",

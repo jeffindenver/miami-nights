@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-; Title:  theModel.js
+; Title:  theViewModel.js
 ; Author: Jeff Shepherd, Janet Blohn
 ; Modified By:
 ; Date:   3/14/2020

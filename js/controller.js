@@ -17,7 +17,7 @@ $(function () {
   $("#submit").click(function () {
     $("#myCarousel").hide(400);
     $(".summary").show(400);
-    $("#submit").fadeOut(200);
+    $("#submit").hide();
     $("#retry").fadeIn(1000);
     viewModel.report();
   });
