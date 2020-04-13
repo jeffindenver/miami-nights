@@ -68,7 +68,7 @@ function ViewModel(model) {
         </label>
       </li>
     </ul>
-
+    <br>
     <p>You selected <span data-bind="text: userAnswer${item.id}"></span></p>
 
     </div>`;

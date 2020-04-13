@@ -1,11 +1,22 @@
+<!--
+===============================================================================
+; Title:  index.html
+; Author: Jeff Shepherd, Janet Blohn
+; Modified By:
+; Date:   3/14/2020
+; Description: HTML file to run the JavaScript Quiz
+===============================================================================
+-->
 <!DOCTYPE html>
 
 <html lang="en-us">
 
 <head>
+  <title>Jeff and Janet Javascript Trivia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styleA1.css">
-  <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type='text/javascript' src='../knockout-3.5.1.js'></script>
@@ -13,20 +24,23 @@
 </head>
 
 <body>
+  <!-- Create the Heading -->
   <div>
     <h1>Miami Nights!</h1>
     <h2>The 80's-Retro JavaScript Quiz</h2>
   </div>
   <div id="overlay">
 
-    <div class="instructions">
+    <!-- Give the instructions for the Quiz -->
+    <div class="section instructions">
       <h2 style="font-size: larger;">Instructions</h2>
       <p class="text-light">There are 10 multiple choice questions. Please choose one answer for each. There is no time
         limit on this test.
         Click the "Begin" button to start.</p>
     </div>
 
-    <div id="myCarousel" class="carousel slide text-light" data-ride="false" data-interval="false">
+    <!-- Define the Carousel -->
+    <div id="myCarousel" class="section carousel slide text-light" data-ride="false" data-interval="false">
 
       <div id="innerCarousel" class="carousel-inner"></div>
 
@@ -40,7 +54,8 @@
       </a>
     </div>
 
-    <div class="summary text-light">
+    <!-- Display the answers chosen by the user at the end of the Quiz -->
+    <div class="section summary text-light">
       <h2>Summary</h2>
       <p>You selected the following answers.
         <ul>
@@ -58,15 +73,14 @@
       </p>
     </div>
 
-    <div class="container button-container">
-      <div class="row">
-        <div class="col-sm-12">
-          <button id="begin" class="button">BEGIN</button>
-          <button id="submit" class="button">SUBMIT</button>
-          <button id="retry" class="button">RETRY</button>
-        </div>
-      </div>
+    <!-- Define the buttons that will be used -->
+    <div>
+      <button id="begin" class="button">BEGIN</button>
+      <button id="submit" class="button">SUBMIT</button>
+      <button id="retry" class="button">RETRY</button>
     </div>
+
+
 
   </div>
 

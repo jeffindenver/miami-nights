@@ -73,17 +73,17 @@ function QuizModel() {
           "c": "c) Try/Catch/Finally Statement"
         }),
       new Question(
-        "7", "What are comma-separated lists of colon-separated name:value pairs known as?",
+        "7", "What are comma-separated lists of colon-separated name value pairs known as?",
         "a", {
           "a": "a) Object Literals",
           "b": "b) Arrays",
           "c": "c) Variables"
         }),
       new Question(
-        "8", "Object literals as functions are called:",
+        "8", "Which of the following returns an object and requires the new keyword?",
         "b", {
-          "a": "a) Method objects",
-          "b": "b) Constructor objects",
+          "a": "a) Object literals",
+          "b": "b) Constructor function",
           "c": "c) Method functions"
         }),
       new Question(
