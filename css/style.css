@@ -53,6 +53,19 @@ ul {
   margin: auto;
 }
 
+table {
+  text-align: left;
+  vertical-align: middle;
+}
+
+td {
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid;
+}
+
 .btn {
   position: relative;
   text-align: left;
@@ -69,7 +82,7 @@ ul {
   float: right;
   font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
-  left: 75%;
+  left: 85%;
   top: 70%;
   background-color: darkorange;
   border-color: darkorange;
@@ -100,10 +113,22 @@ ul {
 }
 
 .summary {
+  max-height: 600px;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  scrollbar-color: rgba(0, 0, 0, 0.6);
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   max-width: 60%;
   display: none;
+}
+
+.summary h2 {
+  background-color: rgba(0, 0, 0, 0.5);;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 #retry {

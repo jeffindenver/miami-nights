@@ -16,10 +16,12 @@ $(function () {
 
   $("#submit").click(function () {
     $("#myCarousel").hide(400);
-    $(".summary").show(400);
     $("#submit").hide();
     $("#retry").fadeIn(1000);
-    viewModel.report();
+    const result = viewModel.report();
+    $("#result").html(result + " correct");
+    viewModel.buildSummary();
+     $(".summary").show(400);
   });
 
   $("#retry").click( () => {

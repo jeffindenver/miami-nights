@@ -75,13 +75,48 @@ function ViewModel(model) {
     return output;
   }
 
+  this.buildSummary = function (result) {
+    quiz.forEach(item => {
+      document.getElementById("summaryTableBody")
+        .insertAdjacentHTML("beforeend", getResultHTML(item));
+    });
+  };
+
+  function getResultHTML(item) {
+    let correctAnswerText = item.possibleAnswers[item.correctAnswer];
+    let userAnswerText = item.possibleAnswers[item.userAnswer];
+    let output =
+      `<td>${item.question}</td>
+       <td>${correctAnswerText}</td>
+       <td>${userAnswerText}</td>
+       <td>${item.isCorrect()}</td>
+    `
+    return output;
+  }
+
   this.report = function () {
+    setAnswers();
+    return getUserScore();
+  };
+
+  function setAnswers() {
     let num = 1;
     quiz.forEach((item) => {
       item.setUserAnswer(observables["userAnswer" + num]());
       console.log("Item ID: " + item.id + " Value: " + item.userAnswer);
       num++;
-    })
-  };
+    });
+  }
+
+  function getUserScore() {
+    let maxScore = 10;
+    let score = 0;
+    quiz.forEach((item) => {
+      if (item.isCorrect()) {
+        score++;
+      }
+    });
+    return ((score / maxScore) * 100) + "%";
+  }
 
 };
