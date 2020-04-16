@@ -46,7 +46,12 @@ function ViewModel(model) {
 
   this.report = function () {
     setAnswers();
-    return getUserScore();
+    let aScore = getUserScore();
+    let aRank = getRank(aScore);
+    return {
+      score: aScore,
+      rank: aRank
+    };
   };
 
   function getUserScore() {
@@ -58,6 +63,18 @@ function ViewModel(model) {
       }
     });
     return ((score / maxScore) * 100);
+  }
+
+  function getRank(score) {
+      let rank = "";
+      if (score > 79) {
+        rank = "expert!";
+      } else if (score > 59) {
+        rank = "novice.";
+      } else {
+        rank = "beginner."
+      }
+      return rank;
   }
 
   this.buildHtml = function () {

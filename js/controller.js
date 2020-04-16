@@ -17,9 +17,9 @@ $(function () {
   $("#submit").click( () => {
     const result = viewModel.report();
     viewModel.buildSummary();
-    let animation = new ResultAnimation(result);
+    let animation = new ResultAnimation(result.score);
     animation.startAnimation();
-    $("#result").html(result + "% correct");
+    $("#result").html(result.score + "% correct.  Rank: " + result.rank);
     $("#myCarousel").hide(400);
     $("#submit").hide();
     $("#retry").fadeIn(1000);
