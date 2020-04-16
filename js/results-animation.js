@@ -46,7 +46,7 @@ function ResultAnimation(theScore) {
       canvas.setAttribute("style", "display: block");
 
       context.fillStyle = "#fc0af8"
-      context.font = "72px Arial";
+      context.font = "96px Arial";
       context.textAlign = "center";
       context.textBaseLine = "middle";
       addAngle = Math.PI * 2 / steps;
@@ -58,7 +58,7 @@ function ResultAnimation(theScore) {
     function fadeOut() {
       setTimeout(function () {
         $(canvas).fadeOut(1000);
-      }, 3000)
+      }, 2000)
     }
 
     init();
