@@ -14,14 +14,16 @@ $(function () {
     $("#question1").addClass("active");
   });
 
-  $("#submit").click(function () {
+  $("#submit").click( () => {
+    const result = viewModel.report();
+    viewModel.buildSummary();
+    let animation = new ResultAnimation(result);
+    animation.startAnimation();
+    $("#result").html(result + "% correct");
     $("#myCarousel").hide(400);
     $("#submit").hide();
     $("#retry").fadeIn(1000);
-    const result = viewModel.report();
-    $("#result").html(result + " correct");
-    viewModel.buildSummary();
-     $(".summary").show(400);
+    $(".summary").show(600);
   });
 
   $("#retry").click( () => {

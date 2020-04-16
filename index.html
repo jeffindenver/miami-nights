@@ -57,6 +57,7 @@
     <!-- Display the answers chosen by the user at the end of the Quiz -->
     <div class="section summary text-light">
       <h2 id="result"></h2>
+      <canvas id="summaryCanvas" width="1000" height="800"></canvas>
       <table>
         <thead>
           <tr>
@@ -76,14 +77,12 @@
       <button id="submit" class="button">SUBMIT</button>
       <button id="retry" class="button">RETRY</button>
     </div>
-
-
-
   </div>
 
   <canvas id="theCanvas"></canvas>
 
   <script src="js/canvas-script.js"></script>
+  <script src="js/results-animation.js"></script>
   <script src="js/theModel.js"></script>
   <script src="js/theViewModel.js"></script>
   <script src="js/controller.js"></script>
