@@ -23,7 +23,7 @@ $(function () {
     $("#myCarousel").hide(400);
     $("#submit").hide();
     $("#retry").fadeIn(1000);
-    $(".summary").show(600);
+    $(".summary").show(400);
   });
 
   $("#retry").click( () => {

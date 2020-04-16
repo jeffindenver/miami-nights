@@ -9,11 +9,11 @@ function ResultAnimation(theScore) {
   function evaluateScore() {
     let message = "";
     if (score > 79) {
-      message = "Tubular! Rank: expert!";
+      message = "Tubular!";
     } else if (score > 59) {
-      message = "Like, not bad. Rank: novice.";
+      message = "Like, not bad.";
     } else {
-      message = "Barf me out! Rank: beginner."
+      message = "Barf me out!"
     }
     return message.toUpperCase();
   }
@@ -46,7 +46,7 @@ function ResultAnimation(theScore) {
       canvas.setAttribute("style", "display: block");
 
       context.fillStyle = "#fc0af8"
-      context.font = "40px Arial";
+      context.font = "72px Arial";
       context.textAlign = "center";
       context.textBaseLine = "middle";
       addAngle = Math.PI * 2 / steps;
