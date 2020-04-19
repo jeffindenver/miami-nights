@@ -108,7 +108,7 @@ tr {
 }
 
 .summary {
-  max-height: 500px;
+  max-height: 600px;
   max-width: 60%;
   border-radius: 10px;
   padding: 2%;
@@ -158,12 +158,12 @@ tr {
 }
 
 #summaryCanvas {
+  margin: auto;
+  margin-top: 10%;
+  max-height: 500px;
+  max-width: 60%;
   border-radius: 10px;
   display: none;
-  position: fixed;
-  width: 55%;
-  height: 52%;
-  max-height: inherit;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
 }

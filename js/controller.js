@@ -22,8 +22,10 @@ $(function () {
     $("#result").html(result.score + "% correct.  Rank: " + result.rank);
     $("#myCarousel").hide(400);
     $("#submit").hide();
-    $("#retry").fadeIn(1000);
-    $(".summary").show(400);
+    setTimeout(function () {
+      $(".summary").show(200);
+      $("#retry").fadeIn(1000);},
+      5000);
   });
 
   $("#retry").click( () => {

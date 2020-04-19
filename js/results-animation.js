@@ -57,8 +57,8 @@ function ResultAnimation(theScore) {
 
     function fadeOut() {
       setTimeout(function () {
-        $(canvas).fadeOut(1000);
-      }, 2000)
+        $(canvas).fadeOut(600);
+      }, 1000)
     }
 
     init();
